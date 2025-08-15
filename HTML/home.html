@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chess.jd - Home</title>
+<link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+
+<!-- Moving Banner -->
+<div class="marquee">
+    <span>♟ Welcome to Chess.jd ♟ Play Smart, Play Bold ♟</span>
+</div>
+
+<!-- Navbar -->
+<nav>
+    <ul>
+        <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="dropdown">
+            <a href="#"><i class="fa-solid fa-chess"></i> Play</a>
+            <div class="dropdown-content">
+                <a href="chess.html">Online</a>
+                <a href="#">With Friends</a>
+                <a href="#">Against AI</a>
+            </div>
+        </li>
+        <li><a href="rules.html"><i class="fa-solid fa-book"></i> Rules</a></li>
+        <li class="dropdown">
+            <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Preferences</a>
+                <a href="#">Logout</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+        <button onclick="playOnline()">Play Online</button>
+        <button onclick="playFriends()">Play with Friends</button>
+        <button onclick="playBot()">Play with Bot</button>
+        <button onclick="play()">play</button>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+        <h2>Ongoing Tournaments</h2>
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>Room Name</th>
+                    <th>Players</th>
+                </tr>
+            </thead>
+            <tbody id="tournament-list">
+                <tr><td>Grand Masters Arena</td><td>12</td></tr>
+                <tr><td>Blitz Battle</td><td>8</td></tr>
+                <tr><td>Rookie Rush</td><td>10</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function playOnline() {
+    alert("Navigating to Play Online...");
+    // window.location.href = "play-online.html";
+}
+function playFriends() {
+    alert("Navigating to Play with Friends...");
+}
+function playBot() {
+    alert("Navigating to Play with Bot...");
+}
+function play(){
+    alert("Navigate to play for fun")
+    window.location.href="chess.html";
+}
+</script>
+</body>
+</html>

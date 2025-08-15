@@ -1,0 +1,76 @@
+/* Background - Neon Chessboard */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('Images/chessback.jpg') no-repeat center center fixed;
+    background-size: contain;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Overlay to darken and focus */
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,255,255,0.5);
+    width: 300px;
+}
+
+/* Login container content */
+.login-container h2 {
+    text-align: center;
+    color: #00ffcc;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #00ffcc;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+button:hover {
+    background: #00cccc;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+/* Links for sign up and guest */
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+.links a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+.links a:hover {
+    text-decoration: underline;
+}
